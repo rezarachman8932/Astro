@@ -1,9 +1,7 @@
 package com.app.astro.common;
 
 import android.content.Context;
-
 import com.app.astro.model.ChannelItem;
-
 import java.util.ArrayList;
 import java.util.List;
 
