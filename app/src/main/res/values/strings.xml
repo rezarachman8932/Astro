@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Astro</string>
+    <string name="text_favourite">Favourite</string>
+    <string name="text_favourite_add">Add this channel to Favourite List</string>
+    <string name="text_favourite_remove">Remove this channel from Favourite List</string>
+</resources>
