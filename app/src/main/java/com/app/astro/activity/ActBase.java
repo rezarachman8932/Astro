@@ -1,7 +1,5 @@
 package com.app.astro.activity;
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.app.astro.common.AppSingleton;
@@ -22,11 +20,6 @@ public abstract class ActBase extends AppCompatActivity {
 
     protected static String SORT_BY_NAME    = "name";
     protected static String SORT_BY_NUMBER  = "number";
-
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
 
     protected ProviderImpl getInstanceProvider() {
         return AppSingleton.getInstance().getProvider();

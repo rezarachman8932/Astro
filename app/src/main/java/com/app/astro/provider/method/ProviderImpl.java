@@ -1,7 +1,6 @@
 package com.app.astro.provider.method;
 
 import com.app.astro.api.payload.ChannelListResponse;
-import com.app.astro.api.payload.ChannelsResponse;
 import com.app.astro.api.rest.APIClient;
 import com.app.astro.api.rest.APIEndpoints;
 import com.app.astro.provider.listener.ResponseListener;
@@ -29,20 +28,6 @@ public class ProviderImpl {
             }
             @Override
             public void onFailure(Call<ChannelListResponse> call, Throwable t) {
-                listener.onFailed(t);
-            }
-        });
-    }
-
-    public void getChannels(final ResponseListener<ChannelsResponse> listener) {
-        Call<ChannelsResponse> response = getService().getChannels();
-        response.enqueue(new Callback<ChannelsResponse>() {
-            @Override
-            public void onResponse(Call<ChannelsResponse> call, Response<ChannelsResponse> response) {
-                listener.onSuccess(response);
-            }
-            @Override
-            public void onFailure(Call<ChannelsResponse> call, Throwable t) {
                 listener.onFailed(t);
             }
         });
